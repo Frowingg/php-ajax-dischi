@@ -20,10 +20,10 @@
 
             <div class="container">
                 <div v-for="movie in movies" class="card">
-                    <img src=" <?php echo $infoCd['poster'] ?> " alt="">
-                    <h2>  {{echo $infoCd['title'] }} </h2>
-                    <h4>  {{echo $infoCd['author']}}  </h4>
-                    <h5>  {{echo $infoCd['year']  }} </h5>
+                    <img :src="movie.poster" alt="movie-img">
+                    <h2>  {{movie.title}} </h2>
+                    <h4>  {{movie.author}}  </h4>
+                    <h5>  {{movie.year}} </h5>
                 </div>
             </div>
 

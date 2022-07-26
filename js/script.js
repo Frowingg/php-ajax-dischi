@@ -6,7 +6,7 @@ var app = new Vue(
     },
     methods: {
         getMoviesFromAPI() {
-            axios.get('http://localhost:8888/rand/api.php')
+            axios.get('http://localhost:8888/php-ajax-dischi/api.php')
             .then((response) => {
                 this.movies = response.data;
             });
